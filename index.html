@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initiasbz-scale=1.0">
+  <title>LiveCommerce</title>
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- css plugins -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <!-- // css plugins -->
+
+  <!-- script plugins -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- // script plugins -->
+</head>
+<!--
+  to sibizi
+
+  media 분기
+  1328px 이상 ~ 고정픽셀(layout max width: 1328px)
+  767px ~ 1328px pc시안으로 viewport 사이즈에 맞추어 줄어듬.
+  ~ 767px mobile시안으로 viewport 사이즈에 맞추어 줄어듬.
+
+  class 네이밍은 그누보드와 겹치지 않게 접두사 'sbz'사용 ex) 'class = "sbz-header"'
+-->
+<body>
+  <div class="wrap">
+    <header class="sbz-header">
+      <div class="sbz-header__inr">
+        <h1 class="sbz-header__logo">
+          <img src="img/logo.svg" alt="SIBIZI LiveCommerce">
+        </h1>
+        <nav class="sbz-gnb">
+          <div class="sbz-gnb__inr">
+            <ul class="sbz-gnb__list">
+              <li class="sbz-gnb__item"><a href="#none">About</a></li>
+              <li class="sbz-gnb__item"><a href="#none">Studio</a></li>
+              <li class="sbz-gnb__item"><a href="#none">Showhost</a></li>
+              <li class="sbz-gnb__item"><a href="#none">Contact</a></li>
+            </ul>
+          </div>
+          <button type="button" class="sbz-gnb__btn">
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <div class="sbz-container">
+      <!-- intro -->
+      <div class="sbz-intro"></div>
+      <!-- // intro -->
+
+      <!-- video -->
+      <div class="sbz-video">
+        <div class="sbz-video__inr sbz-inner">
+          <div class="sbz-video__text">
+            <p class="sbz-video__text--tit">
+              쉽게<br />
+              라이브 커머스 방송을<br />
+              시작해보세요! 
+            </p>
+            <p class="sbz-video__text--desc">
+              공장처럼 찍어내는 듯한 기존의 라이브 방송 등과는 다른<br />
+              상품과 브랜드의 가치를 드러낼 수 있는<br />
+              <span>하이 퀄리티 기획형 라이브</span>를 추구합니다.
+            </p>
+          </div>
+          <div class="sbz-video__video">
+            <img src="img/@dummy_video-thumb.png" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- // video -->
+
+      <!-- slide -->
+      <div class="sbz-slide">
+        <div class="sbz-slide__inr sbz-inner">
+          <div class="sbz-slide__head">
+            <!-- <h2 class="sbz-slide__head--tit">
+              십이지 라이브 커머스는 다릅니다.
+            </h2>
+            <p class="sbz-slide__head--desc">
+              올인원 라이브 서비스로 더욱 효율적이고, 알찬 라이브를 만듭니다.
+            </p> -->
+          </div>
+          <div class="sbz-slide__cont">
+            <div class="sbz-slide__thumb">
+              <div class="sbz-slide__swiper swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="img/img_slide01.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="img/img_slide01.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="img/img_slide01.jpg" alt=""></div>
+                </div>
+              </div>
+            </div>
+            <div class="sbz-slide__text">
+              <div class="sbz-slide__navi">
+                <button type="button" class="sbz-slide__navi--prev"><img src="img/icon_prev.svg" alt="이전"></button>
+                <button type="button" class="sbz-slide__navi--next"><img src="img/icon_next.svg" alt="다음"></button>
+              </div>
+              <div class="sbz-slide__text-box s-active">
+                <div class="sbz-slide__text-box--txt"><span>찍어내듯 똑같은 라이브는 NO!</span></div>
+                <div class="sbz-slide__text-box--tit"><span>자체 스튜디오 보유</span></div>
+                <div class="sbz-slide__text-box--desc">
+                  <span>
+                    단독 호리존 스튜디오로 외부 소음을 차단합니다.<br />
+                    크로마키와 다양한 배경지 활용 가능하며<br />
+                    다채로운 조명 사용으로 분위기 전환이 가능합니다.<br />
+                  </span>
+                </div>
+              </div>
+
+              <div class="sbz-slide__text-box">
+                <div class="sbz-slide__text-box--txt"><span>찍어내듯 똑같은 라이브는 NO!</span></div>
+                <div class="sbz-slide__text-box--tit"><span>자체 스튜디오 보유</span></div>
+                <div class="sbz-slide__text-box--desc">
+                  <span>
+                    단독 호리존 스튜디오로 외부 소음을 차단합니다.<br />
+                    크로마키와 다양한 배경지 활용 가능하며<br />
+                    다채로운 조명 사용으로 분위기 전환이 가능합니다.<br />
+                  </span>
+                </div>
+              </div>
+
+              <div class="sbz-slide__text-box">
+                <div class="sbz-slide__text-box--txt"><span>찍어내듯 똑같은 라이브는 NO!</span></div>
+                <div class="sbz-slide__text-box--tit"><span>자체 스튜디오 보유</span></div>
+                <div class="sbz-slide__text-box--desc">
+                  <span>
+                    단독 호리존 스튜디오로 외부 소음을 차단합니다.<br />
+                    크로마키와 다양한 배경지 활용 가능하며<br />
+                    다채로운 조명 사용으로 분위기 전환이 가능합니다.<br />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- // slide -->
+
+      <!-- platform -->
+      <div class="sbz-platform">
+        <div class="sbz-platform-front">
+          <h2 class="sbz-platform-front__tit">브랜드와 상품에 가장 적합한 플랫폼에서!</h2>
+          <div class="sbz-platform-front__logo">
+            <ul>
+              <li><img src="img/img_platform-logo-naver.svg" alt=""></li>
+              <li><img src="img/img_platform-logo-kakao.svg" alt=""></li>
+              <li><img src="img/img_platform-logo-coupang.svg" alt=""></li>
+              <li><img src="img/img_platform-logo-live11.svg" alt=""></li>
+              <li><img src="img/img_platform-logo-grip.svg" alt=""></li>
+            </ul>
+          </div>
+        </div>
+        <div class="sbz-platform-back">
+          <img src="img/@dummy_platform-bg.jpg" alt="">
+        </div>
+      </div>
+      <!-- // platform -->
+
+      <!-- process -->
+      <div class="sbz-process sbz-inner">
+        <h2 class="sbz-process__tit">Process</h2>
+        <div class="sbz-process__cont">
+          <div class="sbz-process__box">
+            <div class="sbz-process__box--day">D-14</div>
+            <dl class="sbz-process__box--desc">
+              <dt>사전 미팅 및 기획회의</dt>
+              <dd>- 상품결정</dd>
+              <dd>- 사전미팅 & 기획논의</dd>
+              <dd>- 쇼호스트 컨텍</dd>
+            </dl>
+          </div>
+
+          <div class="sbz-process__box">
+            <div class="sbz-process__box--day">D-10</div>
+            <dl class="sbz-process__box--desc">
+              <dt>사전 미팅 및 기획회의</dt>
+              <dd>- 상품결정</dd>
+              <dd>- 사전미팅 & 기획논의</dd>
+              <dd>- 쇼호스트 컨텍</dd>
+            </dl>
+          </div>
+
+          <div class="sbz-process__box">
+            <div class="sbz-process__box--day">D-10</div>
+            <dl class="sbz-process__box--desc">
+              <dt>사전 미팅 및 기획회의</dt>
+              <dd>- 상품결정</dd>
+              <dd>- 사전미팅 & 기획논의</dd>
+              <dd>- 쇼호스트 컨텍</dd>
+            </dl>
+          </div>
+
+          <div class="sbz-process__box">
+            <div class="sbz-process__box--day">D-10</div>
+            <dl class="sbz-process__box--desc">
+              <dt>사전 미팅 및 기획회의</dt>
+              <dd>- 상품결정</dd>
+              <dd>- 사전미팅 & 기획논의</dd>
+              <dd>- 쇼호스트 컨텍</dd>
+            </dl>
+          </div>
+
+        </div>
+      </div>
+      <!-- // process -->
+
+      <!-- package -->
+      <div class="sbz-package sbz-inner">
+        <h2 class="sbz-package-tit">A to Z 패키지</h2>
+        <div class="sbz-package__head">
+          <h3 class="sbz-package__head--tit">
+            Package
+          </h3>
+          <p class="sbz-package__head--desc">
+            끝날 때까지 끝난게 아니다! 사전 마케팅부터 라이브 이후까지 케어하는 A to Z 패키지!
+          </p>
+        </div>
+        <div class="sbz-package__cont">
+          <div class="sbz-package__box">
+            <div class="sbz-package__box-tit">
+              <span class="sbz-package__box-tit--course">A</span>
+              <span class="sbz-package__box-tit--txt">스타터 패키지</span>
+            </div>
+            <div class="sbz-package__box-info">
+              <div class="sbz-package__box-list">
+                <ul>
+                  <li>간단 큐시트 및 기획안</li>
+                  <li>쇼호스트 1인</li>
+                  <li>카메라 1대</li>
+                  <li>웹판넬 3장</li>
+                </ul>
+              </div>
+              <div class="sbz-package__box-price">900,000<span>원</span></div>
+            </div>
+          </div>
+
+          <div class="sbz-package__box">
+            <div class="sbz-package__box-tit">
+              <span class="sbz-package__box-tit--course">B</span>
+              <span class="sbz-package__box-tit--txt">베이직 패키지</span>
+            </div>
+            <div class="sbz-package__box-info">
+              <div class="sbz-package__box-list">
+                <ul>
+                  <li>간단 큐시트 및 기획안</li>
+                  <li>쇼호스트 2인</li>
+                  <li>카메라 2대</li>
+                  <li>웹판넬 제작</li>
+                  <li>라이브VDM</li>
+                </ul>
+              </div>
+              <div class="sbz-package__box-price">1,500,000<span>원</span></div>
+            </div>
+          </div>
+
+          <div class="sbz-package__box">
+            <div class="sbz-package__box-tit">
+              <span class="sbz-package__box-tit--course">C</span>
+              <span class="sbz-package__box-tit--txt">베이직 패키지</span>
+            </div>
+            <div class="sbz-package__box-info">
+              <div class="sbz-package__box-list">
+                <ul>
+                  <li>간단 큐시트 및 기획안</li>
+                  <li>쇼호스트 2인</li>
+                  <li>카메라 3대</li>
+                  <li>웹판넬 제작</li>
+                  <li>라이브VDM</li>
+                  <li>크로마키 배경 제작</li>
+                  <li>사전VCR 2개</li>
+                </ul>
+              </div>
+              <div class="sbz-package__box-price">3,000,000<span>원</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- // package -->
+
+      <!-- contact -->
+      <div class="sbz-contact">
+        <div class="sbz-contact__inr sbz-inner">
+          <h2 class="sbz-contact__tit">성공적인 라이브 커머스<br />십이지와 함께 합니다</h2>
+          <a href="#none" class="sbz-contact__btn">
+            <span class="sbz-contact__btn--txt">Contact Us</span>
+            <span class="sbz-contact__btn--icon"></span>
+          </a>
+        </div>
+      </div>
+      <!-- // contact -->
+
+      <!-- partner -->
+      <div class="sbz-partner"></div>
+      <!-- // partner -->
+    </div>
+
+    <footer class="sbz-footer">
+      <div class="sbz-footer__inr sbz-inner">
+        <div class="sbz-footer__ceo">
+          (주)십이지<br />
+          대표이사 박버금
+        </div>
+        <div class="sbz-footer__info">
+          <div class="sbz-footer__addr">
+            <dl>
+              <dt>ADD</dt>
+              <dd>
+                (06122)서울 강남구 논현로111길 24-5<br />
+                십이지HQ
+              </dd>
+            </dl>
+            <dl>
+              <dt>TEL</dt>
+              <dd>1599-6369</dd>
+            </dl>
+            <dl>
+              <dt>E-MAIL</dt>
+              <dd>service@sibizi.com</dd>
+            </dl>
+          </div>
+          <div class="sbz-footer__contact">
+            <a href="#none">
+              <span class="sbz-footer__contact--txt">CONTACT US</span>
+              <span class="sbz-footer__contact--icon"><img src="img/icon_arrow-right.svg" alt="contact us 바로가기"></span>
+            </a>
+          </div>
+        </div>
+        <div class="sbz-footer__copy">
+          &copy; Sibizi Corp. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    const swiperTarget = document.querySelector('.sbz-slide__swiper')
+    const textBoxs = document.querySelectorAll('.sbz-slide__text-box')
+    const swiper = new Swiper(swiperTarget, {
+      // effect: 'fade',
+      loop: true,
+      speed: 1000,
+      // autoplay: {
+      //   delay: 5000,
+      // },
+      navigation: {
+          prevEl: document.querySelector('.sbz-slide__navi--prev'),
+          nextEl: document.querySelector('.sbz-slide__navi--next'),
+      },
+      on: {
+        init: function() {
+          textBoxs.forEach((text) => {
+            text.classList.remove('s-active')
+          })
+          textBoxs[this.realIndex].classList.add('s-active')
+        },
+        slideChange: function() {
+          textBoxs.forEach((text) => {
+            text.classList.remove('s-active')
+          });
+          textBoxs[this.realIndex].classList.add('s-active')
+        },
+      },
+    });
+  </script>
+  <script src="js/common.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
