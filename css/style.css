@@ -214,7 +214,7 @@ html, body {
 
 .sbz-process .sbz-process__tit {
   position: sticky;
-  top: 0;
+  top: 80px;
   width: calc(50% - 16px);
   height: 91px;
   font-size: 75px;
